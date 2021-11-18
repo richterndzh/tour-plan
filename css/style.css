@@ -409,6 +409,7 @@ template {
 .navbar-menu__link {
   text-decoration: none;
   color: #FFF;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
@@ -494,9 +495,11 @@ template {
     padding: 30px 0 30px 0;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
+    max-width: 673px;
+    margin: auto;
     padding: 22px 0 22px 0;
   }
   .navbar-menu__link {
@@ -511,7 +514,7 @@ template {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 86%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;

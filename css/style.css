@@ -700,5 +700,18 @@ template {
   .logo {
     width: 99px;
   }
+  .hotel {
+    padding: 3px 0 50px 0;
+  }
+  .hotel-description {
+    margin-top: 0;
+  }
+  .stars {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
+  .star {
+    margin-right: -1px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

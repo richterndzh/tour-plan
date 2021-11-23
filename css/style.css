@@ -871,6 +871,7 @@ template {
   }
   .map {
     width: 340px;
+    height: 210px;
   }
 }
 

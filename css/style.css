@@ -983,6 +983,10 @@ template {
   .slider {
     height: 179px;
   }
+  .slider-button {
+    width: 3px;
+    height: 10px;
+  }
   .booking {
     padding: 30px 20px;
     height: 210px;

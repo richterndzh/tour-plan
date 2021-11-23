@@ -982,6 +982,7 @@ template {
     height: 179px;
   }
   .booking {
+    padding: 30px 20px;
     height: 210px;
   }
   .map {

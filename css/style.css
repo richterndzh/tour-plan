@@ -975,9 +975,6 @@ template {
     width: 340px;
     height: 210px;
   }
-  .newsletter {
-    padding: 75px 0 71px 0;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1110,9 +1107,6 @@ template {
   }
   .map {
     height: 180px;
-  }
-  .newsletter {
-    padding: 62px 0 83px 0;
   }
   .newsletter-title {
     font-weight: 300;

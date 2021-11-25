@@ -29,3 +29,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
+
+$(".newsletter").parallax({
+  imageScr: "image/newsletter.jpg",
+});

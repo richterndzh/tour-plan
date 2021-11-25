@@ -1,49 +1,69 @@
-@media (max-width: 1200px)
+@media ( max-width: 1200px )
   .container
     max-width: 960px
-  .slider
-    max-width: 590px
-@media (max-width: 992px)
-  .container, .newsletter-wrapper 
+  .stars
+    flex-basis: 100%
+  .hotel
+    &-slider
+      width: 590px
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+@media ( max-width: 992px )
+  .container,
+  .newsletter-wrapper
     max-width: 700px
-  .logo
-    width: 132px
+    .logo
+      width: 132px
   .navbar
     &-top
-      padding: 30px 0 30px 0
+      padding-top: 30px
+      padding-bottom: 30px
     &__search
-      margin-left: 47px
+      margin-left: 48px
     &-menu
-      max-width: 673px
-      margin: auto
-      padding: 22px 0 22px 0
+      padding-top: 22px
+      padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
   .search
     &__input
-      max-width: 340px
+      width: 340px
   .hotel
-    padding-bottom: 56px
     &-grid
       flex-direction: column
     &__slider
       margin-bottom: 30px
     &-right
       flex-direction: row
+    &-slider
+      width: 100%
   .booking
     width: 340px
-  .slider
-    max-width: 100%
   .map
     width: 340px
-    height: 210px
-@media (max-width: 768px)
+  .reviews
+    padding: 40px 0 60px 0
+    &-slider
+      &__item
+        max-width: 580px
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 30px
+        line-height: 38px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 50px
+        margin-top: 0
+@media ( max-width: 767px )
   .container
     max-width: 576px
-    width: 86%
+    width: 87%
   .navbar
-    &__search, &-menu, &__user
+    &__search, &-menu, &__uzer
       display: none
   .menu
     &-button
@@ -55,85 +75,102 @@
       justify-content: space-between
       flex-direction: column
       border: none
-      background-color: $light
+      background-color: $white
       cursor: pointer
       &__line
         width: 16px
         height: 1px
         background-color: $text-color
   .hotel
-    &-wrapper
-      justify-content: space-between
+    padding-top: 0
+    .stars
+      flex-basis: auto
     &-name
       flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
     &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
       &__rating
         display: none
       &__offer
         order: -1
-        margin: 0
-      &__text
-        width: 100%
-      &__name
-        margin: 10px 0 0 0
-  .stars
-    flex-basis: auto
-  .slider
-    height: 350px
+        margin-left: 0
   .hotel
+    &-slider
+      height: 350px
     &-right
       flex-direction: column
       min-height: 400px
   .booking
     width: 100%
+    margin-bottom: 20px
   .map
     width: 100%
     height: 160px
-  .newsletter 
-    &-wrapper 
+  .newsletter
+    &-wrapper
       max-width: 576px
-      width: 86%
+      width: 87%
       flex-direction: column
       align-items: flex-start
-@media (max-width: 576px)
-  .logo
-    width: 99px
-  .hotel
-    padding: 3px 0 42px 0
-    &-description
-      margin-top: 0
-    &__slider
-      margin-top: 19px
-      margin-bottom: 20px
-    &-right
-      min-height: 400px
-  .stars
-    flex-basis: 23%
-  .star
-    margin-right: -1px
-  .slider
-    height: 179px
-    &-button
-      width: 3px
-      height: 10px
-  .booking
-    padding: 30px 20px
-    height: 210px
-    margin-bottom: 20px
-  .map
-    height: 180px
-  .newsletter 
-    &-title 
-      font-weight: 300
+  .reviews
+    padding: 40px 0 50px 0
+    &__title
       font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 42px
+      margin-top: 0
+    &-slider
+      &__item
+        padding: 0 31px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          margin-left: -75px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -75px
+          transform: translate(50%, 0)
+@media ( max-width: 576px )
+  .container
+    .logo
+      width: 99px
+  .navbar
+    &-top
+      padding-top: 28px
+      padding-bottom: 28px
+  .hotel
+    &-slider
+      height: 180px
+    &__slider
+      margin-bottom: 20px
+  .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      font-style: normal
+      font-weight: 300
       font-size: 20px
       line-height: 25px
-      &__strong 
+      &__strong
         margin-top: 5px
-        font-weight: 600
-        font-style: normal
         font-size: 30px
-        line-height: 37px
-  .subscribe 
-    margin-top: 20px
-    max-width: 100%
+        line-height: 38px
+        text-transform: uppercase
+    &__title
+      margin-top: 0
+      margin-bottom: 37px
+  .subscribe
+    width: 100%

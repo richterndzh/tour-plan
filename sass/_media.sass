@@ -18,13 +18,13 @@
       width: 132px
   .navbar
     &-top
-      padding-top: 30px
-      padding-bottom: 30px
+      padding: 30px 0 30px 0
     &__search
-      margin-left: 48px
+      margin-left: 47px
     &-menu
-      padding-top: 22px
-      padding-bottom: 22px
+      max-width: 673px
+      margin: auto
+      padding: 22px 0 22px 0
       &__link
         font-size: 12px
         line-height: 15px
@@ -32,6 +32,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 60px
     &-grid
       flex-direction: column
     &__slider
@@ -46,24 +47,36 @@
     width: 340px
   .reviews
     padding: 40px 0 60px 0
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
-      &__title
-        font-style: normal
-        font-weight: bold
-        font-size: 30px
-        line-height: 38px
-        text-align: center
-        text-transform: uppercase
-        margin-bottom: 50px
-        margin-top: 0
+      &__avatar
+        margin-bottom: 1px
+      &__username
+        margin-bottom: 7px
+      &__profile
+        margin-bottom: 34px
+      &__button
+        top: 50%
+        &--prev
+          left: 0
+        &--next
+          right: 0
+      
 @media ( max-width: 767px )
   .container
     max-width: 576px
-    width: 87%
+    width: 86%
   .navbar
-    &__search, &-menu, &__uzer
+    &__search, &-menu, &__user
       display: none
   .menu
     &-button
@@ -75,7 +88,7 @@
       justify-content: space-between
       flex-direction: column
       border: none
-      background-color: $white
+      background-color: $light
       cursor: pointer
       &__line
         width: 16px
@@ -108,7 +121,7 @@
       min-height: 400px
   .booking
     width: 100%
-    margin-bottom: 20px
+    margin-bottom: 0
   .map
     width: 100%
     height: 160px
@@ -137,11 +150,11 @@
       &__button
         top: 30px
         &--prev
-          left: 50%
+          left: 45%
           margin-left: -75px
           transform: translate(-50%, 0)
         &--next
-          right: 50%
+          right: 45%
           margin-right: -75px
           transform: translate(50%, 0)
 @media ( max-width: 576px )
@@ -152,10 +165,20 @@
     &-top
       padding-top: 28px
       padding-bottom: 28px
+  .breadcrumb 
+    padding-bottom: 6px
+  .booking 
+    margin-bottom: 0
   .hotel
+    padding-bottom: 40px
     &-slider
       height: 180px
+      &__button
+        width: 5px
+        height: 9px 
     &__slider
+      margin-bottom: 20px
+    &-info 
       margin-bottom: 20px
   .newsletter
     padding: 76px 0 83px 0
@@ -174,3 +197,11 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews 
+    &__title 
+      width: 200px
+      margin: auto
+      margin-bottom: 40px
+    &-slider
+      &__profile
+        margin-bottom: 33px

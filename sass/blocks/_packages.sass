@@ -1,0 +1,192 @@
+.packages 
+  padding: 10px 0 70px 0
+  &-wrapper 
+    display: grid
+    grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    column-gap: 30px 
+    row-gap: 27px
+    grid-auto-rows: minmax(83px, min-content)
+    align-items: start
+  &-title
+    text-transform: uppercase
+    text-align: center
+    font-weight: 700
+    font-style: normal
+    font-size: 36px
+    line-height: 45px
+    margin-bottom: 65px
+  &-main
+    position: relative
+    display: flex
+    grid-column: 1/3
+    flex-direction: row 
+    width: 730px
+    height: 500px
+    &__left 
+      grid-gap: 0
+    &__right
+      padding: 40px 21px 30px 43px
+      width: 364px
+      background-color: $dark 
+      color: $light
+      border-radius: 0 8px 8px 0
+    &__image 
+      position: relative
+      width: 366px
+      height: 100%
+      object-fit: cover 
+      border-radius: 8px 0 0 8px
+    &__title 
+      margin: 0 0 27px 0
+    &__text 
+      font-weight: 400
+      font-style: normal
+      font-size: 14px
+      line-height: 22px
+    &__wrap 
+      margin: 45px -17px 37px 0
+    &__requisites
+      display: flex
+      align-items: center
+      margin-top: 9px
+    &__icon
+      width: 13px
+      height: 16px
+      margin-right: 15px
+    &__sub 
+      font-weight: 400
+      font-style: normal
+      font-size: 12px
+      line-height: 15px
+    &__price 
+      display: flex
+      align-items: flex-end
+      justify-content: space-between
+    &__cost 
+      display: flex
+      flex-direction: column
+    &__old 
+      font-weight: 400
+      font-style: normal
+      font-size: 14px
+      line-height: 17px
+      text-decoration: line-through
+    &__new
+      font-weight: 700
+      font-style: normal
+      font-size: 24px
+      line-height: 30px
+      margin: 5px 0 0 0
+    &__button 
+      display: inline
+      margin-bottom: -5px
+      padding: 11px 27px 
+      border-radius: 4px
+      background-color: $primary 
+      color: $light
+      font-weight: 600
+      font-style: normal
+      font-size: 14px
+      line-height: 19px
+      border: none
+      cursor: pointer
+  &__offer
+      &-main
+        position: absolute
+        padding: 8px 12px
+        width: 95px
+        height: 30px
+        top: 25px
+        right: 0
+        bottom: 0
+        left: 0
+        border-radius: 0 4px 4px 0
+        background-color: $primary 
+        color: $light
+        font-weight: 600
+        font-style: normal
+        font-size: 12px
+        line-height: 15px
+  &__stars 
+      margin-bottom: 3px
+  &__title 
+    font-weight: 700
+    font-style: normal
+    font-size: 18px
+    line-height: 22px
+  &-card 
+    display: flex
+    flex-direction: column 
+    background-color: $dark 
+    color: $light
+    border-radius: 8px 
+    overflow: hidden
+  &__image 
+    position: relative
+    width: 350px
+    height: 250px
+    object-fit: cover
+  &__offer 
+    position: absolute
+    padding: 4px 9px
+    background-color: $primary
+    margin-top: 26px
+    font-weight: 600
+    font-style: normal
+    font-size: 8px
+    line-height: 10px
+    border-radius: 0 4px 4px 0
+  &-info 
+    padding: 30px 21px 31px 30px
+    &__title 
+      margin: 0
+    &__wrap 
+      margin: 23px 0 24px 0
+  &-requisites
+    display: flex
+    align-items: center
+    margin-top: 11px
+    &__icon 
+      width: 13px
+      height: 16px
+      margin-right: 15px
+    &__sub
+      font-weight: 400
+      font-style: normal
+      font-size: 12px
+      line-height: 15px
+  &-price 
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    &__cost
+      display: flex
+      flex-direction: column
+    &__old 
+      font-weight: 400
+      font-style: normal
+      font-size: 14px
+      line-height: 17px
+      text-decoration: line-through
+    &__new 
+      font-weight: 700
+      font-style: normal
+      font-size: 24px
+      line-height: 30px
+      margin: 5px 0 0 0
+  &-button 
+    display: inline
+    padding: 11px 27px 
+    margin-bottom: -5px
+    border-radius: 4px
+    background-color: $primary 
+    color: $light
+    font-weight: 600
+    font-style: normal
+    font-size: 14px
+    line-height: 19px
+    border: none
+    cursor: pointer
+    
+
+

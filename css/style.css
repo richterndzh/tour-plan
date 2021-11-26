@@ -893,7 +893,7 @@ template {
 }
 
 .packages-main__wrap {
-  margin: 45px -17px 37px 0;
+  margin: 45px -17px 30px 0;
 }
 
 .packages-main__requisites {
@@ -959,7 +959,6 @@ template {
 
 .packages-main__button {
   display: inline;
-  margin-bottom: -5px;
   padding: 11px 27px;
   border-radius: 4px;
   background-color: #EC1F46;
@@ -1111,7 +1110,6 @@ template {
 .packages-button {
   display: inline;
   padding: 11px 27px;
-  margin-bottom: -5px;
   border-radius: 4px;
   background-color: #EC1F46;
   color: #ffffff;
@@ -1472,6 +1470,9 @@ template {
     width: 220px;
     height: 250px;
   }
+  .packages-main {
+    width: 630px;
+  }
 }
 
 @media (max-width: 1126px) {
@@ -1589,9 +1590,19 @@ template {
   .card__title {
     width: 180px;
   }
+  .packages-wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .packages-main {
+    grid-column: span 2;
+    -ms-grid-row: 1;
+    grid-row: 1px;
+    width: 100%;
+  }
 }
 
-@media (max-width: 874px) {
+@media (max-width: 873px) {
   .container {
     max-width: 576px;
     width: 86%;
@@ -1727,6 +1738,54 @@ template {
     width: 49%;
     height: 255px;
   }
+  .packages-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-main__right {
+    padding: 30px 21px 25px 43px;
+    width: 100%;
+    height: 250px;
+    margin-top: -10px;
+    border-radius: 0 0 8px 8px;
+  }
+  .packages-main__image {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+  }
+  .packages-main__title {
+    margin-bottom: 20px;
+  }
+  .packages-main__text {
+    display: none;
+  }
+  .packages-main__wrap {
+    margin: 0 0 15px 0;
+  }
+  .packages-main__new {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .packages-main__old {
+    font-size: 14px;
+  }
+  .packages-button {
+    padding: 9px 17px;
+    font-size: 12px;
+  }
+  .packages-price__new {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .packages-price__old {
+    font-size: 12px;
+  }
+  .packages__image {
+    height: 200px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1816,6 +1875,35 @@ template {
     width: 180px;
   }
   .card {
+    width: 100%;
+  }
+  .packages {
+    padding: 5px 0 60px 0;
+  }
+  .packages-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .packages-wrapper {
+    row-gap: 27px;
+  }
+  .packages-main {
+    height: 440px;
+  }
+  .packages-main__right {
+    padding: 25px 18px 15px 25px;
+  }
+  .packages-main__image {
+    height: 200px;
+  }
+  .packages-main__button {
+    padding: 8px 18px;
+    font-size: 10px;
+  }
+  .packages-card {
+    grid-column: span 2;
+  }
+  .packages__image {
     width: 100%;
   }
 }

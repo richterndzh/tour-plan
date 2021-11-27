@@ -18,8 +18,12 @@
     width: 220px
     height: 250px
   .packages
-    &-main 
+    &-main
       width: 630px
+      &__text
+        min-height: 190px
+      &__wrap
+        margin-top: 20px
 @media ( max-width: 1126px)
   .card
     width: 200px
@@ -88,21 +92,21 @@
           left: 0
         &--next
           right: 0
-  .activities 
-    &-wrapper 
+  .activities
+    &-wrapper
       flex-wrap: wrap
-    &__card 
+    &__card
       margin-bottom: 20px
-  .card 
+  .card
     width: 340px
     height: 250px
     &__title
       width: 180px
-  .packages 
-    &-wrapper 
+  .packages
+    &-wrapper
       grid-template-columns: repeat(2, 1fr)
-    &-main 
-      grid-column: span 2 
+    &-main
+      grid-column: span 2
       grid-row: 1px
       width: 100%
 @media ( max-width: 873px )
@@ -191,13 +195,13 @@
           right: 45%
           margin-right: -75px
           transform: translate(50%, 0)
-  .activities 
+  .activities
     padding: 40px 0 60px 0
-  .card 
+  .card
     width: 49%
     height: 255px
-  .packages 
-    &-main 
+  .packages
+    &-main
       flex-direction: column
       &__right
         padding: 30px 21px 25px 43px
@@ -209,27 +213,27 @@
         width: 100%
         height: 250px
         border-radius: 8px 8px 0 0
-      &__title 
+      &__title
         margin-bottom: 20px
-      &__text 
+      &__text
         display: none
-      &__wrap 
+      &__wrap
         margin: 0 0 15px 0
-      &__new 
+      &__new
         margin-top: 0
         font-size: 20px
-      &__old 
+      &__old
         font-size: 14px
-    &-button 
+    &-button
       padding: 9px 17px
       font-size: 12px
-    &-price 
-      &__new 
+    &-price
+      &__new
         font-size: 18px
         margin-top: 0
       &__old
         font-size: 12px
-    &__image 
+    &__image
       height: 200px
 @media ( max-width: 576px )
   .container
@@ -239,9 +243,9 @@
     &-top
       padding-top: 28px
       padding-bottom: 28px
-  .breadcrumb 
+  .breadcrumb
     padding-bottom: 6px
-  .booking 
+  .booking
     margin-bottom: 0
   .hotel
     padding-bottom: 40px
@@ -249,10 +253,10 @@
       height: 180px
       &__button
         width: 5px
-        height: 9px 
+        height: 9px
     &__slider
       margin-bottom: 20px
-    &-info 
+    &-info
       margin-bottom: 20px
   .newsletter
     padding: 76px 0 83px 0
@@ -271,43 +275,43 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
-  .reviews 
-    &__title 
+  .reviews
+    &__title
       width: 200px
       margin: auto
       margin-bottom: 40px
     &-slider
       &__profile
         margin-bottom: 33px
-      &__text 
+      &__text
         text-align: left
   .activities
     padding-top: 25px
-    &__title 
+    &__title
       font-size: 18px
       line-height: 22px
       font-weight: 700
       font-style: normal
       margin-bottom: 35px
-    &__card 
+    &__card
       &--2
         order: 1
       &--4
         order: 2
   .card
     &__title
-      &--2 
+      &--2
         width: 180px
-  .card 
+  .card
     width: 100%
-  .packages 
+  .packages
     padding: 5px 0 60px 0
-    &-title 
+    &-title
       font-size: 25px
       margin-bottom: 30px
     &-wrapper
       row-gap: 27px
-    &-main 
+    &-main
       height: 440px
       &__right
         padding: 25px 18px 15px 25px
@@ -316,7 +320,7 @@
       &__button
         padding: 8px 18px
         font-size: 10px
-    &-card 
-      grid-column: span 2 
-    &__image 
+    &-card
+      grid-column: span 2
+    &__image
       width: 100%

@@ -2301,9 +2301,6 @@ template {
   .packages__image {
     width: 100%;
   }
-  .footer {
-    padding-top: 67px;
-  }
   .footer-wrapper {
     -ms-grid-columns: (minmax(280px, 1fr))[1];
         grid-template-columns: repeat(1, minmax(280px, 1fr));

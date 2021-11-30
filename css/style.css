@@ -1795,18 +1795,20 @@ template {
   }
   .navbar__search {
     margin-left: 47px;
+    width: 340px;
   }
   .navbar-menu {
-    max-width: 673px;
-    margin: auto;
     padding: 22px 0 22px 0;
   }
   .navbar-menu__link {
+    margin-left: 12px;
+    margin-right: 12px;
     font-size: 12px;
     line-height: 15px;
   }
-  .search__input {
-    width: 340px;
+  .search__button {
+    width: 64px;
+    margin-left: 15px;
   }
   .hotel {
     padding-bottom: 60px;
@@ -1983,13 +1985,24 @@ template {
   }
 }
 
-@media (max-width: 873px) {
+@media (max-width: 874px) {
+  .activities__card {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 86%;
+    overflow-x: hidden;
   }
   body {
     padding-top: 78px;
+  }
+  .navbar-top {
+    margin-right: 0;
   }
   .navbar__mobile--fixed {
     position: fixed;
@@ -2018,6 +2031,7 @@ template {
   .navbar-button {
     display: none;
     position: fixed;
+    text-align: center;
     left: 0;
     right: 0;
     bottom: 0;
@@ -2034,10 +2048,16 @@ template {
             flex-direction: column;
   }
   .navbar-menu__item {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   .navbar-menu__item--mobile--visible {
     display: block;
+  }
+  .navbar__search {
+    width: 245px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .menu-button {
     display: -webkit-box;
@@ -2061,6 +2081,7 @@ template {
     cursor: pointer;
   }
   .menu-button__line {
+    margin-left: -20px;
     width: 16px;
     height: 1px;
     background-color: #333333;
@@ -2234,8 +2255,19 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    width: 88%;
+    overflow-y: hidden;
+    margin: 0 auto;
+  }
   .container .logo {
     width: 99px;
+  }
+  .navbar__search {
+    margin: 0 auto;
+  }
+  .navbar-button {
+    overflow-y: scroll;
   }
   .navbar-top {
     padding-top: 28px;

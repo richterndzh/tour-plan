@@ -50,16 +50,18 @@
       padding: 30px 0 30px 0
     &__search
       margin-left: 47px
+      width: 340px
     &-menu
-      max-width: 673px
-      margin: auto
       padding: 22px 0 22px 0
       &__link
+        margin-left: 12px
+        margin-right: 12px
         font-size: 12px
         line-height: 15px
   .search
-    &__input
-      width: 340px
+    &__button
+      width: 64px
+      margin-left: 15px
   .hotel
     padding-bottom: 60px
     &-grid
@@ -173,13 +175,21 @@
         padding-top: 0
         margin-top: 13px
         width: 136px
-@media ( max-width: 873px )
+@media ( max-width: 874px )
+  .activities
+    &__card
+      width: 280px
+      height: 200px
+@media ( max-width: 767px )
   .container
     max-width: 576px
     width: 86%
+    overflow-x: hidden
   body
     padding-top: 78px
   .navbar
+    &-top
+      margin-right: 0
     &__mobile
       &--fixed
         position: fixed
@@ -199,6 +209,7 @@
     &-button
       display: none
       position: fixed
+      text-align: center
       left: 0
       right: 0
       bottom: 0
@@ -209,10 +220,15 @@
     &-menu
       flex-direction: column
       &__item
+        margin-top: 10px
         margin-bottom: 20px
         &--mobile
           &--visible
             display: block
+    &__search
+      width: 245px
+      margin-top: 10px
+      margin-bottom: 20px
   .menu
     &-button
       display: flex
@@ -226,6 +242,7 @@
       background-color: $light
       cursor: pointer
       &__line
+        margin-left: -20px
         width: 16px
         height: 1px
         background-color: $text-color
@@ -347,9 +364,16 @@
       margin-left: 20px
 @media ( max-width: 576px )
   .container
+    width: 88%
+    overflow-y: hidden
+    margin: 0 auto
     .logo
       width: 99px
   .navbar
+    &__search
+      margin: 0 auto
+    &-button
+      overflow-y: scroll
     &-top
       padding-top: 28px
       padding-bottom: 28px

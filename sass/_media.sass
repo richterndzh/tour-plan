@@ -47,21 +47,21 @@
       width: 132px
   .navbar
     &-top
-      padding: 30px 0 30px 0
+      padding: 30px 0
     &__search
       margin-left: 47px
-      width: 340px
     &-menu
-      padding: 22px 0 22px 0
+      padding: 22px 0
       &__link
-        margin-left: 12px
-        margin-right: 12px
         font-size: 12px
         line-height: 15px
+
+    &-button
+      &__container
+        max-width: 673px
   .search
-    &__button
-      width: 64px
-      margin-left: 15px
+    &__input
+      width: 340px
   .hotel
     padding-bottom: 60px
     &-grid
@@ -180,55 +180,64 @@
     &__card
       width: 280px
       height: 200px
-@media ( max-width: 767px )
+@media ( max-width: 768px )
   .container
     max-width: 576px
     width: 86%
-    overflow-x: hidden
   body
     padding-top: 78px
   .navbar
-    &-top
-      margin-right: 0
-    &__mobile
-      &--fixed
+    &-menu
+      padding: 0
+
+    &--mobile
+      &-fixed
         position: fixed
         left: 0
         top: 0
         right: 0
         z-index: 99
-    &__user, &__search
+
+    &__search, &__user
       &--mobile
         &--hidden
           display: none
+
+    &__search, &__user
+      &--mobile
         &--visible
           display: flex
-    &__user
-      flex-direction: column
-      justify-content: center
+
+    &__search
+      margin: 27px 0 39px 0
+
     &-button
       display: none
       position: fixed
-      text-align: center
-      left: 0
       right: 0
+      left: 0
       bottom: 0
       top: 78px
       padding-top: 30px
+      overflow-y: auto
       &--visible
         display: block
+
     &-menu
       flex-direction: column
-      &__item
-        margin-top: 10px
+      align-items: center
+      &__link
         margin-bottom: 20px
-        &--mobile
-          &--visible
-            display: block
-    &__search
-      width: 245px
-      margin-top: 10px
-      margin-bottom: 20px
+
+    .user
+      flex-direction: column
+      justify-content: center
+      &__name
+        &--light
+          margin: 10px 0 0 0
+          color: $light
+
+  // Модальная кнопка
   .menu
     &-button
       display: flex
@@ -239,19 +248,12 @@
       justify-content: space-between
       flex-direction: column
       border: none
-      background-color: $light
+      background-color: #fff
       cursor: pointer
       &__line
-        margin-left: -20px
         width: 16px
         height: 1px
         background-color: $text-color
-  .user
-    &__name
-      &--light
-        color: $light
-        margin-left: 0
-        margin-top: 10px
   .hotel
     padding-top: 0
     .stars
@@ -363,20 +365,9 @@
     &__additional
       margin-left: 20px
 @media ( max-width: 576px )
-  .container
-    width: 88%
-    overflow-y: hidden
-    margin: 0 auto
-    .logo
-      width: 99px
-  .navbar
-    &__search
-      margin: 0 auto
-    &-button
-      overflow-y: scroll
-    &-top
-      padding-top: 28px
-      padding-bottom: 28px
+  .logo
+    &__image
+      width: 100px
   .breadcrumb
     padding-bottom: 6px
   .booking
@@ -529,6 +520,16 @@
       &__link
         font-size: 11px
 @media (max-width: 480px)
+  .navbar
+    &__search
+      width: 243px
+  .hotel
+    &-slider
+      height: 200px
+      &__button
+        width: 12px
+        height: 12px
+
   .footer
     &-wrapper
       grid-template-columns: minmax(280px, max-content)

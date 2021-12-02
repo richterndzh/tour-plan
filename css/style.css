@@ -18,6 +18,21 @@ img {
   max-width: 100%;
 }
 
+.come-back {
+  margin-top: 20px;
+  min-height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 7px 25px;
+  background: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

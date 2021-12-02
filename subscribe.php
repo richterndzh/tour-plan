@@ -5,18 +5,13 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Почта:</b> $email<br>
 ";
 
 // Настройки PHPMailer
@@ -37,16 +32,17 @@ try {
     $mail->setFrom('richterndzh@gmail.com', 'Nadezhda Richter'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('nazixer@gmail.com');
+    $mail->addAddress('nazixer@gmail.com');  
 
-    // Отправка сообщения
-    $mail->isHTML(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;    
 
-    // Проверяем отравленность сообщения
-    if ($mail->send()) {$result = "success";} 
-    else {$result = "error";}
+// Отправка сообщения
+$mail->isHTML(true);
+$mail->Subject = $title;
+$mail->Body = $body;    
+
+// Проверяем отравленность сообщения
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
 
 } catch (Exception $e) {
     $result = "error";
@@ -54,4 +50,5 @@ try {
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+header('Location: subscribe.html');
+?>

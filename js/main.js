@@ -63,4 +63,13 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
+   $(document).keydown(function (e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+    }
+  });
 });

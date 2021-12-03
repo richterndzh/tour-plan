@@ -1790,10 +1790,11 @@ template {
 
 .modal__dialog {
   position: fixed;
-  top: 50%;
+  top: 46%;
   left: 50%;
   max-width: 478px;
-  padding: 33px 88px;
+  min-height: 485px;
+  padding: 15px 88px 15px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1819,9 +1820,15 @@ template {
   cursor: pointer;
 }
 
+.modal__button {
+  margin-right: 40px;
+}
+
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message {
@@ -1829,6 +1836,8 @@ template {
   min-height: 123px;
   resize: none;
   margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__info {

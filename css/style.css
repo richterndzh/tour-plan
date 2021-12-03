@@ -1790,10 +1790,9 @@ template {
 
 .modal__dialog {
   position: fixed;
-  top: 46%;
+  top: 50%;
   left: 50%;
   max-width: 478px;
-  min-height: 485px;
   padding: 15px 88px 15px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -2639,6 +2638,7 @@ template {
   .modal__dialog {
     max-height: 90%;
     overflow-y: scroll;
+    overflow-x: scroll;
   }
 }
 

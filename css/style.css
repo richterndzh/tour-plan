@@ -2140,6 +2140,12 @@ template {
     margin-top: 13px;
     width: 136px;
   }
+  .modal__button {
+    width: 100%;
+  }
+  .modal__info {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 874px) {
@@ -2403,6 +2409,10 @@ template {
   .footer__additional {
     margin-left: 20px;
   }
+  .modal__dialog {
+    width: 90%;
+    padding: 36px 50px 33px 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2622,6 +2632,13 @@ template {
   }
   .footer-rulses__link {
     font-size: 11px;
+  }
+}
+
+@media (max-height: 670px) {
+  .modal__dialog {
+    max-height: 90%;
+    overflow-y: scroll;
   }
 }
 

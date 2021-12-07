@@ -106,5 +106,8 @@ const reviewsSlider = new Swiper('.reviews-slider', {
       },
     });
   });
-  $(".phone").mask("+7(999)999-99-99");
+  $(document).ready(function(){
+    $("#phone").mask("+7(000)000-00-00");
+    $("#phone1").mask("+7(000)000-00-00");
+  });
 });

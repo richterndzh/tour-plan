@@ -77,6 +77,20 @@ const reviewsSlider = new Swiper('.reviews-slider', {
       $('.form').each(function () {
         $(this).validate({
         errorClass: "invalid",
+        rules: {
+        name: {
+          required: true,
+          minlength: 2,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          minlength: 12,
+        },
+      },
+      
         messages: {
           name: {
             required: "Enter specify your name",

@@ -1313,6 +1313,7 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .reviews {

@@ -11,13 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img
               src="image/horisont-logo.svg"
               alt="logo: Best Tour Plan"
@@ -28,18 +29,25 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <input
               type="text"
               class="search__input"
-              placeholder="Search Location"
+              placeholder="Search Location |"
             />
             <button class="search__button">
               <img src="image/search.svg" alt="icon: search" />
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="image/user-avatar.jpg"
               alt="avatar: Natan"
@@ -148,7 +156,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide hotel-slider__item">
+              <div class="swiper-slide hotel-slider__item" data-aos="zoom-out">
                 <img
                   class="hotel-slider__image"
                   src="image/slide-1.jpg"
@@ -180,7 +188,7 @@
             ></button>
           </div>
           <!-- Swiper -->
-          <div class="hotel-right">
+          <div class="hotel-right" data-aos="zoom-out">
             <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
@@ -574,7 +582,12 @@
       </div>
     </section>
     <!-- /.newsletter -->
-    <section class="reviews">
+    <section
+      class="reviews"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
         <div class="swiper reviews-slider">
@@ -701,7 +714,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="image/section-activities/card-1.jpg"
               alt="Card-1"
@@ -713,7 +730,11 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--2">
+          <div
+            class="card activities__card activities__card--2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="image/section-activities/card-2.jpg"
               alt="Card-2"
@@ -727,7 +748,11 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--3">
+          <div
+            class="card activities__card activities__card--3"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="image/section-activities/card-3.jpg"
               alt="Card-3"
@@ -741,7 +766,11 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--4">
+          <div
+            class="card activities__card activities__card--4"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="image/section-activities/card-4.jpg"
               alt="Card-4"
@@ -1031,6 +1060,7 @@
     <script src="js/parallax.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

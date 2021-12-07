@@ -79,17 +79,18 @@ const reviewsSlider = new Swiper('.reviews-slider', {
         errorClass: "invalid",
         messages: {
           name: {
-            required: "Please specify your name",
+            required: "Enter specify your name",
             minlength: "The name must be at least two letters",
           },
         email: {
-          required: "We need your email address to contact you",
+          required: "Enter email address",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Please, enter phone number",
+          required: "Enter phone number",
         },
       },
     });
   });
+  $(".phone").mask("+7(999)999-99-99");
 });

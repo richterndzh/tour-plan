@@ -112,3 +112,23 @@ const reviewsSlider = new Swiper('.reviews-slider', {
   });
   AOS.init();
 });
+
+
+      $('.plus').each(function () {
+        $(this).validate({
+        errorClass: "subscribe",
+        rules: {
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      
+        messages: {
+        email: {
+          required: "Enter email address",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  });

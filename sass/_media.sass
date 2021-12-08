@@ -26,12 +26,17 @@
         margin-top: 20px
   .footer
     &__input
+      width: 220px
       &-group
-        flex-basis: 100%
     &__additional
       margin-left: -30px
     &__legal
       margin-left: 20px
+    &__social
+      &-network
+        margin-left: -30px
+  .invalid
+    margin-left: 7px
 @media ( max-width: 1126px)
   .card
     width: 200px
@@ -80,6 +85,7 @@
   .reviews
     padding: 40px 0 60px 0
     &__title
+      margin: 0 auto
       font-style: normal
       font-weight: bold
       font-size: 30px
@@ -93,7 +99,12 @@
       &__avatar
         margin-bottom: 1px
       &__username
+        margin-top: 9px
         margin-bottom: 7px
+      &__date
+        margin-top: 2px
+      &__text
+        line-height: 19px
       &__profile
         margin-bottom: 34px
       &__button
@@ -102,15 +113,18 @@
           left: 0
         &--next
           right: 0
+  .newsletter
+    padding: 71px 0 74px 0
   .activities
     padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
+    &__title
     &__card
       margin-bottom: 20px
   .card
     width: 340px
-    height: 250px
+    height: 255px
     &__title
       width: 180px
   .packages
@@ -132,14 +146,14 @@
     &__message
       flex-basis: 100%
     &-logo
-      margin-top: -40px
-      width: 100px
+      margin-top: -38px
+      width: 97px
       grid-row: 1 / 2
       grid-column: span 2
     &__social
       &-network
         margin-top: -25px
-        margin-left: -50px
+        margin-left: -52px
         grid-row: 1 / 2
         grid-column: span 4
         align-self: center
@@ -150,9 +164,20 @@
       margin-top: 5px
     &__additional
       grid-column: span 2
+      margin-left: -40px
     &__legal
       margin-left: 20px
       grid-column: span 2
+    &__title
+      &--mb-3
+        margin-top: -5px
+        margin-left: 0
+    &__item
+      &--mb-2
+        margin-top: 2px
+        margin-left: 3px
+      &--email
+        margin-top: 22px
     &__contact
       &-details
         margin-left: 0
@@ -160,22 +185,25 @@
         grid-row: 3
         grid-column: span 5
       &-form
+        width: 539px
         margin-top: 20px
         grid-column: span 5
         grid-row: 4
+    &__input
+      width: 100%
     &__rulses
       &-links
         margin-left: 0
         grid-row: 5
         grid-column: span 4
-        margin-top: 15px
+        margin-top: 20px
         justify-self: start
         padding-left: 6px
       &-image
         grid-row: 5
         grid-column: 5 / 7
         padding-top: 0
-        margin-top: 13px
+        margin-top: 20px
         width: 136px
   .modal
     &__button
@@ -192,6 +220,7 @@
   .container
     max-width: 576px
     width: 86%
+    overflow-x: hidden
   body
     padding-top: 78px
   .navbar
@@ -368,11 +397,12 @@
   .footer
     &__input
       &-group
-        flex-basis: 100%
     &__message
       flex-basis: 100%
     &__additional
-      margin-left: 20px
+      margin-left: -10px
+    &__legal
+      margin-left: 0px
   .modal
     &__dialog
       width: 90%

@@ -1951,15 +1951,20 @@ template {
   .packages-main__wrap {
     margin-top: 20px;
   }
-  .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .footer__input {
+    width: 220px;
   }
   .footer__additional {
     margin-left: -30px;
   }
   .footer__legal {
     margin-left: 20px;
+  }
+  .footer__social-network {
+    margin-left: -30px;
+  }
+  .invalid {
+    margin-left: 7px;
   }
 }
 
@@ -2036,6 +2041,7 @@ template {
     padding: 40px 0 60px 0;
   }
   .reviews__title {
+    margin: 0 auto;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
@@ -2051,7 +2057,14 @@ template {
     margin-bottom: 1px;
   }
   .reviews-slider__username {
+    margin-top: 9px;
     margin-bottom: 7px;
+  }
+  .reviews-slider__date {
+    margin-top: 2px;
+  }
+  .reviews-slider__text {
+    line-height: 19px;
   }
   .reviews-slider__profile {
     margin-bottom: 34px;
@@ -2065,6 +2078,9 @@ template {
   .reviews-slider__button--next {
     right: 0;
   }
+  .newsletter {
+    padding: 71px 0 74px 0;
+  }
   .activities {
     padding-bottom: 50px;
   }
@@ -2077,7 +2093,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 250px;
+    height: 255px;
   }
   .card__title {
     width: 180px;
@@ -2111,8 +2127,8 @@ template {
         flex-basis: 100%;
   }
   .footer-logo {
-    margin-top: -40px;
-    width: 100px;
+    margin-top: -38px;
+    width: 97px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
@@ -2120,7 +2136,7 @@ template {
   }
   .footer__social-network {
     margin-top: -25px;
-    margin-left: -50px;
+    margin-left: -52px;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
@@ -2140,10 +2156,22 @@ template {
   }
   .footer__additional {
     grid-column: span 2;
+    margin-left: -40px;
   }
   .footer__legal {
     margin-left: 20px;
     grid-column: span 2;
+  }
+  .footer__title--mb-3 {
+    margin-top: -5px;
+    margin-left: 0;
+  }
+  .footer__item--mb-2 {
+    margin-top: 2px;
+    margin-left: 3px;
+  }
+  .footer__item--email {
+    margin-top: 22px;
   }
   .footer__contact-details {
     margin-left: 0;
@@ -2153,17 +2181,21 @@ template {
     grid-column: span 5;
   }
   .footer__contact-form {
+    width: 539px;
     margin-top: 20px;
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  .footer__input {
+    width: 100%;
   }
   .footer__rulses-links {
     margin-left: 0;
     -ms-grid-row: 5;
     grid-row: 5;
     grid-column: span 4;
-    margin-top: 15px;
+    margin-top: 20px;
     -ms-grid-column-align: start;
         justify-self: start;
     padding-left: 6px;
@@ -2175,7 +2207,7 @@ template {
     -ms-grid-column-span: 2;
     grid-column: 5 / 7;
     padding-top: 0;
-    margin-top: 13px;
+    margin-top: 20px;
     width: 136px;
   }
   .modal__button {
@@ -2197,6 +2229,7 @@ template {
   .container {
     max-width: 576px;
     width: 86%;
+    overflow-x: hidden;
   }
   body {
     padding-top: 78px;
@@ -2436,16 +2469,15 @@ template {
   .packages__image {
     height: 200px;
   }
-  .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
   .footer__message {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .footer__additional {
-    margin-left: 20px;
+    margin-left: -10px;
+  }
+  .footer__legal {
+    margin-left: 0px;
   }
   .modal__dialog {
     width: 90%;

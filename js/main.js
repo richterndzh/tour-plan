@@ -87,7 +87,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
           email: true,
         },
         phone: {
-          minlength: 12,
+          minlength: 16,
         },
       },
       

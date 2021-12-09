@@ -1622,6 +1622,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 5px;
 }
 
 .footer__social-network {
@@ -1692,7 +1693,7 @@ template {
 .footer__title--mb-3 {
   margin-left: 5px;
   margin-top: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .footer__title--inline {
@@ -1724,6 +1725,7 @@ template {
 
 .footer__item--email {
   margin-top: 20px;
+  margin-left: -10px;
 }
 
 .footer__icon-wrapper {
@@ -1731,9 +1733,24 @@ template {
   margin-top: 7px;
 }
 
+.footer__icon-wrapper--email {
+  width: 20px;
+  margin-top: 2px;
+  margin-left: 20px;
+  margin-right: 6px;
+}
+
+.footer__icon-wrapper--tel {
+  width: 40px;
+}
+
 .footer__text {
   color: #BDBDBD;
   margin-bottom: 22px;
+}
+
+.footer__text--map {
+  margin-top: 0;
 }
 
 .footer__link {
@@ -1753,6 +1770,7 @@ template {
       flex-wrap: wrap;
   text-decoration: none;
   color: inherit;
+  margin-left: 10px;
 }
 
 .footer__li {

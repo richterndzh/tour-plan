@@ -1784,6 +1784,7 @@ template {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 5px;
+  font-size: 12px;
 }
 
 .footer__input-group {
@@ -1800,6 +1801,7 @@ template {
   margin-bottom: 23px;
   resize: none;
   margin-left: 5px;
+  font-size: 12px;
 }
 
 .footer__button {

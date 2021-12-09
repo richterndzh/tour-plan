@@ -1916,12 +1916,14 @@ template {
 .modal__input {
   width: 100%;
   margin-top: 15px;
+  font-size: 12px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-top: 15px;
+  font-size: 12px;
 }
 
 .modal__button {

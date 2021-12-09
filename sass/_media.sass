@@ -237,10 +237,18 @@
     width: 87%
   body
     padding-top: 78px
+  .button
+    &:hover
+      color: #fff
+      background: $primary
   .navbar
     &-menu
       padding: 0
-
+      &__link
+        &:after
+          display: none
+        &:hover:after
+          display: none
     &--mobile
       &-fixed
         position: fixed

@@ -2152,6 +2152,9 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .footer__input {
+    max-width: 255px;
+  }
   .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
@@ -2585,6 +2588,9 @@ template {
   .footer__info {
     margin-bottom: 15px;
   }
+  .footer__input {
+    max-width: 265px;
+  }
   .footer__message {
     margin-bottom: 14px;
     width: 281px;
@@ -2925,7 +2931,7 @@ template {
     margin-left: 0;
   }
   .footer__links--email {
-    margin-left: -10px;
+    margin-left: 10px;
     margin-top: 0;
   }
   .footer__icon-wrapper--tel {
@@ -2933,11 +2939,13 @@ template {
   }
   .footer__icon-wrapper--email {
     margin-top: 0;
+    margin-left: 0;
   }
   .footer__icon--tel {
     min-width: 20px;
   }
   .footer__input {
+    max-width: 400px;
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 12px;

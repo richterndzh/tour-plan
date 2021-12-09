@@ -122,7 +122,11 @@
   .newsletter
     padding: 71px 0 74px 0
   .activities
-    padding-bottom: 50px
+    padding: 32px 0px 50px 0px
+    &-wrap
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
     &-wrapper
       flex-wrap: wrap
     &__title
@@ -230,12 +234,6 @@
       width: 100%
     &__info
       margin-top: 10px
-@media ( max-width: 874px )
-  .activities
-    &__card
-      width: 280px
-      height: 200px
-
 @media ( max-width: 766px )
   .container
     max-width: 576px
@@ -377,8 +375,6 @@
           right: 45%
           margin-right: -75px
           transform: translate(50%, 0)
-  .activities
-    padding: 40px 0 60px 0
   .card
     width: 49%
     height: 255px
@@ -568,6 +564,7 @@
       &__text
         text-align: left
   .activities
+    padding: 29px 0px 42px 0px
     &__title
       font-size: 18px
       line-height: 22px

@@ -112,7 +112,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
   AOS.init();
   AOS.init({
   disable: function() {
-    var maxWidth = 991;
+    var maxWidth = 992;
     return window.innerWidth < maxWidth;
   }
 });

@@ -110,6 +110,12 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     $("#phone1").mask("+7(000)000-00-00");
   });
   AOS.init();
+  AOS.init({
+  disable: function() {
+    var maxWidth = 991;
+    return window.innerWidth < maxWidth;
+  }
+});
 });
 
 
